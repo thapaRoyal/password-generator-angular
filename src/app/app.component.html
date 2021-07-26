@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="columns is-centered">
+  <div class="columns is-centered mt-5">
     <div class="box column is-one-third">
       <h1 class="title has-text-centered">Password Generator</h1>
 
@@ -48,7 +48,7 @@
         Generate!
       </button>
 
-      <div class="box">
+      <div class="box" *ngIf="password">
         <label>Your Password</label>
         <input class="input" [value]="password" />
       </div>
